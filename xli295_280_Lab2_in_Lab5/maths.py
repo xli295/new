@@ -3,7 +3,11 @@ def add(first, second, n=10):
     return convert_base(sum, n)
 
 def factorial(number):
-    
+    value = 1
+    for i in range(1, number+1):
+        value *= i
+    return value
+
 def fibonacci(length):
     def internal(first, second, count):
         third = add(first, second)
