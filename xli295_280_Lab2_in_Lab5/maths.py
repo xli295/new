@@ -2,6 +2,8 @@ def add(first, second, n=10):
     sum = first + second
     return convert_base(sum, n)
 
+def factorial(number):
+    
 def fibonacci(length):
     def internal(first, second, count):
         third = add(first, second)

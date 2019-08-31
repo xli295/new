@@ -5,6 +5,12 @@ import maths        # Our code to test
 class MathsTest(unittest.TestCase):
     ''' Unit tests for our maths functions. '''
 
+    def test_factorial(self):
+        '''Tests the functionality of calculation of factorial of a number.'''
+        value = maths.factorial(4)
+        
+        self.assertEqual(24, value)
+        
     def test_add(self):
         ''' Tests the add function. '''
         #Arrange
